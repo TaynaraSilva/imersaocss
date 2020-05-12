@@ -27,7 +27,7 @@ header {
 
 .menu ul {
 	display: flex;
-  justify-content: space-around;
+	justify-content: space-around;
 }
 
 .menu li {
@@ -85,8 +85,8 @@ a:hover{
 	padding: 20px;
 }
 section div{
-	color: #E9F0F0;
 	display: grid;
+	color: #E9F0F0;
 	justify-content: space-around;
 }
 @media (min-width: 1200px) {
