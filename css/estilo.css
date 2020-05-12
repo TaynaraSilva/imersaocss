@@ -1,39 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
-    background: #696969;
-    background-size: auto 100vh;
+		background: url("../img/fundo.png");
+		background-size: auto 100vh;
     font-family: Arial;
-    height: 100vh;
+		height: 100vh;
+}
+
+header {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .menu {
-    font-style: oblique;
+	background: #000704;
+	font-style: oblique;
+	position: fixed;
+	width: 100vw;
+	top: 0;
 }
 
-.menu ul{
-display: flex;
-justify-content: space-around;
+.menu ul {
+	display: flex;
+  justify-content: space-around;
 }
 
-.menu li{
-list-style: none;
+.menu li {
+	list-style: none;
+}
+
+.menu a{
+	display: block;
+	padding: 10px 20px;
 }
 
 a{
-color: #F0FFFF
-;
-text-decoration: none;
+	color: #C1D0D0;
+	text-decoration: none;
 }
 
 a:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }  
 
 .site-subtitle,
 .site-title{
-    color: #2F4F4F;
-    text-align: center;
+  color: #E9F0F0;
+  text-align: center;
 }
 
 .site-subtitle {
-    font-style: italic;
+  font-style: italic;
+}
+
+
+@media (min-width: 1200px) {
+	.site-subtitle,
+  .site-title{
+		color: #ebfbfe;
+		background: #616A69;
+	}
+	
+	header div{
+		border: 4px solid #616A69;
+		box-shadow: 20px 20px 20px;
+	}
+}
+
+
+.img-portfolio {
+	width: 110px;
+	height:110px;
+	padding: 20px;
+
+}
+.port{
+	text-align: center;
+	padding: 20px;
+}
+section div{
+	display: grid;
+	justify-content: space-around;
+}
+@media (min-width: 1200px) {
+	body{
+		background: #212223;
+	}
+
+	header {
+		height: 50vh;
+	}
+
+	.menu{
+		background: white;
+	}
+
+	a{
+		color: #04080F;
+	}
+
+	.site-title{
+		font-size: 4em;
+	}
+
+	.port{
+		text-align: center;
+		color: #ebfbfe;
+		font-size: 2em;
+		font-style: italic;
+	}
+	
+	section div{
+		display: flex;
+		color: #ebfbfe;
+		justify-content: space-around;
+		padding: 20px;
+	}
 }
