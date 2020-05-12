@@ -81,9 +81,11 @@ a:hover{
 }
 .port{
 	text-align: center;
+	color: #E9F0F0;
 	padding: 20px;
 }
 section div{
+	color: #E9F0F0;
 	display: grid;
 	justify-content: space-around;
 }
